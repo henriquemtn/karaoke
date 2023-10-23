@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulsar {
+    0% {
+      background-color: #781AF1; /* Cor inicial */
+    }
+    50% {
+      background-color: #4D1298; /* Cor intermediária */
+    }
+    100% {
+      background-color: #781AF1; /* Cor final (a mesma que a inicial) */
+    }
+  }
+  
+  .pulsar-animation {
+    animation: pulsar 2s linear infinite; /* 2s controla a duração da animação */
+    /* Outros estilos do elemento, como largura, altura, etc. */
+    width: 10px;
+    height: 10px;
+    background-color: #ff00ff; /* Cor inicial */
+    border-radius: 50%; /* Para tornar o elemento um círculo */
+  }
+
+  .pulsar-bar {
+    animation: pulsar 2s linear infinite; /* 2s controla a duração da animação */
+    /* Outros estilos do elemento, como largura, altura, etc. */
+    width:43%;
+    height: 8px;
+    background-color: #ff00ff; /* Cor inicial */
+    position: relative;
+  }
+  
