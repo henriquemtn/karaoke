@@ -4,8 +4,7 @@ export default function Header({ user }: any) {
     console.log('User:', user);
 
     return (
-        <div className='flex flex-col justify-center items-center w-full z-20'>
-            <nav className="w-full bg-[#353535] z-40 fixed top-0 left-0 right-0">
+            <nav className="w-full bg-[#353535] fixed top-0 left-0 right-0 z-20">
                 <div className="md:justify-around mx-[20px] md:items-center flex md:px-8">
                     <div className="flex flex-row items-center justify-between w-full py-3 md:py-5">
                         <h1 className="text-xl text-violet-700  font-medium">Logo</h1>
@@ -39,6 +38,5 @@ export default function Header({ user }: any) {
                     </div>
                 </div>
             </nav>
-        </div>
     );
 }
