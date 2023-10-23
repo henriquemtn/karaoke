@@ -18,7 +18,7 @@ function App() {
     // Redirecionar para a página de login se não houver informações de usuário
     return (
       <div>
-        <p>Please <Link to="/">log in</Link></p>
+        <p>Please <Link to="/login">log in</Link></p>
       </div>
     );
   }
@@ -86,7 +86,7 @@ function App() {
             />
           </div>
           <div className='flex p-4 rounded-md bg-gradient-to-l from-violet-700 to-violet-800 items-center justify-between my-2'>
-            <button>See all opened karaoke’s in your region</button>
+            <Link to="/bar/1" state={{ user }}>See all opened karaoke’s in your region</Link>
             <FaArrowRight />
           </div>
         </div>
