@@ -7,7 +7,6 @@ import Header from './components/Header';
 import {
   FaArrowRight,
 } from 'react-icons/fa'
-import MostSang from './components/MostSang';
 import { useState } from 'react';
 import Recommend from './components/Recommend';
 
